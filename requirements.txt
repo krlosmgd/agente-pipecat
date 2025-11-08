@@ -1,0 +1,5 @@
+python-dotenv
+loguru
+fastapi
+uvicorn[standard]
+pipecat-ai[daily,openai,deepgram,cartesia, webrtc]
