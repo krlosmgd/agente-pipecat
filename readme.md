@@ -115,17 +115,3 @@ python -c "from run_agent import load_system_prompt; print(load_system_prompt())
 
 Esto imprimirá el prompt que el agente usará (ya sea desde `SYSTEM_PROMPT` o desde `config.json`).
 
-## Buenas prácticas y notas
-
-- Mantén tus claves en `.env` (no en el repo).
-- Si vas a desplegar en producción, considera secretos gestionados y limites de concurrencia para evitar costes inesperados.
-- Si cambias el prompt con frecuencia, usar `SYSTEM_PROMPT` facilita el CI/CD sin tocar archivos.
-
-Si quieres, puedo:
-- Añadir tests unitarios mínimos para `load_system_prompt`.
-- Documentar cómo configurar un transporte WebRTC/Daily paso a paso.
-- Crear ejemplos de `.env.example` y plantillas para `config.json`.
-
----
-
-Actualizado el README: guía rápida para levantar y entender el proyecto.
